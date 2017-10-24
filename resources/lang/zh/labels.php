@@ -46,6 +46,19 @@ return [
                     'total'           => '角色总计',
                 ],
             ],
+            'permission' => [
+                'create'     => '新建权限',
+                'edit'       => '编辑权限',
+                'management' => '权限管理',
+
+                'table' => [
+                    'number_of_users' => '用户数',
+                    'permissions'     => '权限',
+                    'role'            => '角色',
+                    'sort'            => '排序',
+                    'total'           => '角色总计',
+                ],
+            ],
 
             'users' => [
                 'active'              => '激活用户',

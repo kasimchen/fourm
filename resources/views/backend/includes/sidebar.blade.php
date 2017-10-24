@@ -70,6 +70,14 @@
                             <span>{{ trans('labels.backend.access.roles.management') }}</span>
                         </a>
                     </li>
+
+                    <li class="{{ active_class(Active::checkUriPattern('admin/access/permission*')) }}">
+                        <a href="{{ route('admin.access.permission.index') }}">
+                            <i class="fa fa-circle-o"></i>
+                            <span>{{ trans('labels.backend.access.permission.management') }}</span>
+                        </a>
+                    </li>
+
                 </ul>
             </li>
             @endauth

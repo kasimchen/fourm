@@ -78,5 +78,16 @@ Route::group([
             //For DataTables
             Route::post('role/get', 'RoleTableController')->name('role.get');
         });
+
+
+        Route::group([
+            'middleware' => 'access.routeNeedsPermission:manage-roles',
+        ], function() {
+            Route::group(['namespace' => 'Permission'], function () {
+                Route::resource('permission', 'PermissionController', ['except' => ['show']]);
+                Route::post('permission/get', 'PermissionController@table')->name('permission.get');
+            });
+        });
+
     });
 });

@@ -45,6 +45,20 @@ return [
                     'sort'            => 'Sort',
                     'total'           => 'role total|roles total',
                 ],
+
+            ],
+            'permission' => [
+                'create'     => 'Create Permission',
+                'edit'       => 'Edit Permission',
+                'management' => 'Permission Management',
+
+                'table' => [
+                    'number_of_users' => '用户数',
+                    'permissions'     => '权限',
+                    'role'            => '角色',
+                    'sort'            => '排序',
+                    'total'           => '角色总计',
+                ],
             ],
 
             'users' => [
